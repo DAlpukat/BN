@@ -55,8 +55,8 @@ const BATIK = [
     daerah: "Solo",
     prov: "Jawa Tengah",
     teknik: "Tulis",
-    warna: ["#4a2c17", "#7c2d12", "#e8dcc6"],
-    img: "https://cdn.hamzahbatik.co.id/media/1788802649832-Batik.jpg",
+    warna: ["#0f0f0f", "#7c2d12", "#e8dcc6"],
+    img: "https://ekosistem.batik.go.id/uploads/produk/20241029064903-itxzkh-lampiran.jpg",
     makna: "Kemakmuran & harapan - sido = jadi, mukti = makmur",
     filosofi:
       "Doa agar pemakai hidup berkecukupan. Isen-isen mikro di dalam menunjukkan detail hidup yang harus dirawat.",
