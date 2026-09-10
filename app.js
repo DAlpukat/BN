@@ -66,6 +66,24 @@ function render(){
     el.addEventListener("keydown",e=>{ if(e.key==="Enter") openModal(el.dataset.id)})
   });
 }
+function setAdaptiveBg(imgEl, fallback){
+  const container=document.getElementById("mMedia");
+  if(!container) return;
+  container.style.background=fallback;
+  try{
+    const c=document.createElement("canvas");
+    const ctx=c.getContext("2d");
+    c.width=20; c.height=20;
+    ctx.drawImage(imgEl,0,0,20,20);
+    const d=ctx.getImageData(0,10,20,1).data;
+    let r=0,g=0,b=0,n=20;
+    for(let i=0;i<d.length;i+=4){ r+=d[i]; g+=d[i+1]; b+=d[i+2]; }
+    r=Math.round(r/n); g=Math.round(g/n); b=Math.round(b/n);
+    container.style.background=`rgb(${r},${g},${b})`;
+  }catch(e){
+    container.style.background=fallback;
+  }
+}
 function openModal(id){
   const b = BATIK.find(x=>x.id===id); if(!b) return;
   cur=b;
@@ -81,7 +99,15 @@ function openModal(id){
   const enBox=document.querySelector(".m-en");
   if(enBox) enBox.style.display = lang==="en" ? "none" : "block";
   const img = b.img || `https://picsum.photos/seed/${b.id}/800/600`;
-  $("#mMedia").innerHTML=`<img src="${img}" alt="${b.nama}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">`;
+  const fallback=b.warna && b.warna[0] ? b.warna[0] : "var(--surface-1)";
+  const mMedia=document.getElementById("mMedia");
+  if(mMedia) mMedia.style.background=fallback;
+  $("#mMedia").innerHTML=`<img src="${img}" alt="${b.nama}" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block" crossorigin="anonymous" onerror="this.style.display='none'">`;
+  const imgEl=mMedia ? mMedia.querySelector("img") : null;
+  if(imgEl){
+    imgEl.onload=()=>setAdaptiveBg(imgEl, fallback);
+    if(imgEl.complete) setAdaptiveBg(imgEl, fallback);
+  }
   modal.classList.remove("hidden"); document.body.style.overflow="hidden";
 }
 function closeModal(){ modal.classList.add("hidden"); document.body.style.overflow=""; cur=null}
