@@ -111,7 +111,7 @@ img{display:block;max-width:100%}
 @media(max-width:900px){.split{grid-template-columns:1fr}}
 .check{list-style:none;display:grid;gap:8px;margin:12px 0}
 .check li{padding-left:22px;position:relative;font-size:14px}
-.check li::before{content:"✓";position:absolute;left:0;top:0;width:18px;height:18px;display:grid;place-items:center;background:var(--primary);color:#fff;border-radius:50%;font-size:11px}
+.check li::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;display:grid;place-items:center;background:var(--primary);border-radius:50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;background-size:12px}
 .muted{color:var(--ink-muted);font-size:13px}
 .photo-stack{display:grid;gap:12px}
 .photo{height:148px;border-radius:16px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:13px;font-weight:600;line-height:1.3}
