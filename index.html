@@ -22,7 +22,10 @@
       <a href="#bela">Bela Negara</a>
     </nav>
     <div class="nav-actions">
-      <button class="btn-ghost" id="langToggle">ID / EN</button>
+      <div class="lang-switch" id="langToggle" role="group" aria-label="Language switch">
+        <button data-lang="id" class="active" aria-pressed="true">ID</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
       <a href="#koleksi" class="btn-primary">Jelajahi Batik</a>
     </div>
     <button class="burger" id="burger" aria-label="menu">☰</button>

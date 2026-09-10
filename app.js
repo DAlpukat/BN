@@ -403,184 +403,179 @@ function shareCurrent() {
     alert("Tersalin: " + text);
   } else alert(text);
 }
-const I18N = {
-  id: {
-    navKoleksi: "Koleksi",
-    navMakna: "Makna & Filosofi",
-    navBela: "Bela Negara",
-    navJelajah: "Jelajahi Batik",
-    heroBadge: "Warisan UNESCO 2009 - Milik Bersama 270 Juta Warga",
-    heroTitle:
-      'Lestarikan<br><span class="serif">Batik,</span> Bela<br>Negara.',
-    heroDesc:
-      "Bela negara tak selalu angkat senjata. Kadang sesederhana <strong>mengenal, memakai, dan menjaga</strong> kain yang bercerita 400 tahun - agar turis mengerti, warga ingat.",
-    heroSearch: "Cari motif, daerah, atau makna...  cth: Mega Mendung",
-    heroMeta:
-      '<span><b>16</b> motif terkurasi</span><span class="dot">\u2022</span><span><b>11</b> provinsi</span><span class="dot">\u2022</span><span><b>3</b> teknik: Tulis, Cap, Kombinasi</span>',
-    heroBtn1: "Jelajahi Koleksi →",
-    heroBtn2: "Kenapa ini bela negara?",
-    koleksiEyebrow: "DATABASE - DIKURASI UNTUK TURIS & WARGA LOKAL",
-    koleksiTitle: "Koleksi Batik Indonesia",
-    koleksiDesc:
-      "Tap kartu untuk baca filosofi, teknik, dan warna. Semua konten dwibahasa - Indonesia & English.",
-    filterAllProv: "Semua Provinsi",
-    filterAllTeknik: "Semua Teknik",
-    sortNama: "Urut: Nama A-Z",
-    sortProv: "Urut: Provinsi",
-    sortTeknik: "Urut: Teknik",
-    maknaEyebrow: "FILOSOFI DALAM KAIN",
-    maknaTitle: "Setiap guratan ada doa.",
-    maknaDesc:
-      "Batik bukan hiasan. <b>Parang</b> untuk keberanian, <b>Kawung</b> untuk kejujuran, <b>Truntum</b> untuk cinta yang tumbuh lagi. MEMAHAMI makna = menghargai pembuatnya.",
-    belaEyebrow: "BELA NEGARA VERSI MAHASISWA",
-    belaTitle: "Bela negara dari tindakan kecil - lewat batik.",
-    touristTitle: "For Tourists - Quick Guide",
-    touristDesc:
-      "Batik <b>Tulis</b> = hand-drawn (weeks, $), <b>Cap</b> = stamped (hours, $), <b>Kombinasi</b> = both. Real batik has pattern on <b>both sides</b>. Check tag: \u201cBatik Tulis Asli\u201d.",
-    footerDesc:
-      "Batik Negara - database batik Indonesia sebagai aksi bela negara. Dibuat mahasiswa, untuk Indonesia.",
-    footerJelajah: "Jelajah",
-    footerEdukasi: "Edukasi",
-    footerBN: "BN",
-    countSuffix: " motif",
-    empty: "Tidak ada motif cocok. Coba kata kunci lain.",
-    modalFilosofi: "Filosofi",
-    modalSejarah: "Sejarah Singkat",
-    modalWarna: "Warna & Bahan",
-    modalPakai: "Pemakaian",
-    modalEnTitle: "EN - For Tourists",
-    btnBagikan: "Bagikan Motif",
-    btnTutup: "Tutup",
-    btnBrowse: "Browse Collection",
+const I18N={
+  id:{
+    navKoleksi:"Koleksi",navMakna:"Makna & Filosofi",navBela:"Bela Negara",navJelajah:"Jelajahi Batik",
+    heroBadge:"Warisan UNESCO 2009 - Milik Bersama 270 Juta Warga",
+    heroTitle:'Lestarikan<br><span class="serif">Batik,</span> Bela<br>Negara.',
+    heroDesc:'Bela negara tak selalu angkat senjata. Kadang sesederhana <strong>mengenal, memakai, dan menjaga</strong> kain yang bercerita 400 tahun - agar turis mengerti, warga ingat.',
+    heroSearch:"Cari motif, daerah, atau makna...  cth: Mega Mendung",
+    heroMeta:'<span><b>16</b> motif terkurasi</span><span class="dot">\u2022</span><span><b>11</b> provinsi</span><span class="dot">\u2022</span><span><b>3</b> teknik: Tulis, Cap, Kombinasi</span>',
+    heroBtn1:"Jelajahi Koleksi",heroBtn2:"Kenapa ini bela negara?",
+    koleksiEyebrow:"DATABASE - DIKURASI UNTUK TURIS & WARGA LOKAL",koleksiTitle:"Koleksi Batik Indonesia",koleksiDesc:"Tap kartu untuk baca filosofi, teknik, dan warna. Semua konten dwibahasa - Indonesia & English.",
+    filterAllProv:"Semua Provinsi",filterAllTeknik:"Semua Teknik",sortNama:"Urut: Nama A-Z",sortProv:"Urut: Provinsi",sortTeknik:"Urut: Teknik",
+    filterPlaceholder:"Cari: nama, daerah, makna...",
+    maknaEyebrow:"FILOSOFI DALAM KAIN",maknaTitle:"Setiap guratan ada doa.",maknaDesc:'Batik bukan hiasan. <b>Parang</b> untuk keberanian, <b>Kawung</b> untuk kejujuran, <b>Truntum</b> untuk cinta yang tumbuh lagi. MEMAHAMI makna = menghargai pembuatnya.',
+    belaEyebrow:"BELA NEGARA VERSI MAHASISWA",belaTitle:"Bela negara dari tindakan kecil - lewat batik.",
+    belaLead:"Tugas bilang: disiplin, tanggung jawab, jaga lingkungan, hargai sesama, taat aturan, kontribusi positif. BN terjemahkan jadi 6 aksi batik sehari-hari:",
+    stats1:"2 Oktober",stats1s:"Hari Batik Nasional",stats2:"5.000+",stats2s:"varian motif tercatat",stats3:"34",stats3s:"provinsi punya batik khas",stats4:"#1",stats4s:"aksi kecil tiap hari",
+    touristTitle:"For Tourists - Quick Guide",touristDesc:'Batik <b>Tulis</b> = hand-drawn (weeks, $$), <b>Cap</b> = stamped (hours, $), <b>Kombinasi</b> = both. Real batik has pattern on <b>both sides</b>. Check tag: \u201cBatik Tulis Asli\u201d.',
+    touristCare:"Care: hand wash cold, no bleach, dry shade.",
+    footerDesc:"Batik Negara - database batik Indonesia sebagai aksi bela negara. Dibuat mahasiswa, untuk Indonesia.",
+    footerMuted:"Bukan toko. Untuk beli, kunjungi pengrajin langsung.",
+    footerJelajah:"Jelajah",footerEdukasi:"Edukasi",footerBN:"BN",
+    countSuffix:" motif",empty:"Tidak ada motif cocok. Coba kata kunci lain.",
+    modalFilosofi:"Filosofi",modalSejarah:"Sejarah Singkat",modalWarna:"Warna & Bahan",modalPakai:"Pemakaian",modalEnTitle:"EN - For Tourists",
+    btnBagikan:"Bagikan Motif",btnTutup:"Tutup",btnBrowse:"Browse Collection",btnCari:"Cari",
+    values:[
+      {t:"Disiplin",p:"Belajar 1 motif/minggu. Hafal asal & makna. Catat di jurnal.",s:"Contoh: tiap Senin pakai batik berbeda + bisa ceritakan filosofinya."},
+      {t:"Tanggung Jawab",p:"Beli batik asli, bukan print tiruan pasar. Dukung pengrajin tulis.",s:"Dampak: 1 kain tulis = 14-30 hari kerja pengrajin tetap hidup."},
+      {t:"Jaga Lingkungan",p:"Pilih pewarna alam (nila, tingi, jambal). Cuci batik tanpa deterjen keras.",s:"Limbah nila bisa kembali ke tanah, sintetis tidak."},
+      {t:"Hargai Sesama",p:"Sapa pengrajin, foto izin, tag & kredit. Jangan tawar sadis.",s:"Turis: tanya \u201cboleh foto cantingnya?\u201d itu hormat."},
+      {t:"Taat Aturan",p:"Hormati motif larangan keraton. Jangan pakai Parang Rusak di acara main-main.",s:"Aturan adat = undang-undang tak tertulis."},
+      {t:"Kontribusi Positif",p:"Cerita ulang. Posting 1 foto batik + info benar. Lawan hoaks \u201cbatik dari negara lain\u201d.",s:"Informasi benar = benteng budaya."}
+    ]
   },
-  en: {
-    navKoleksi: "Collection",
-    navMakna: "Meaning & Philosophy",
-    navBela: "Defend the Nation",
-    navJelajah: "Explore Batik",
-    heroBadge: "UNESCO Heritage 2009 - Shared by 270 Million",
-    heroTitle:
-      'Preserve<br><span class="serif">Batik,</span> Defend<br>the Nation.',
-    heroDesc:
-      "Defending the nation is not always about weapons. Sometimes it is as simple as <strong>knowing, wearing, and preserving</strong> a 400-year-old cloth - so tourists understand and locals remember.",
-    heroSearch: "Search motif, region, or meaning... e.g. Mega Mendung",
-    heroMeta:
-      '<span><b>16</b> curated motifs</span><span class="dot">\u2022</span><span><b>11</b> provinces</span><span class="dot">\u2022</span><span><b>3</b> techniques: Tulis, Cap, Kombinasi</span>',
-    heroBtn1: "Explore Collection →",
-    heroBtn2: "Why is this defending the nation?",
-    koleksiEyebrow: "DATABASE - CURATED FOR TOURISTS & LOCALS",
-    koleksiTitle: "Indonesian Batik Collection",
-    koleksiDesc:
-      "Tap a card to read philosophy, technique, and colors. Bilingual content - Indonesian & English.",
-    filterAllProv: "All Provinces",
-    filterAllTeknik: "All Techniques",
-    sortNama: "Sort: Name A-Z",
-    sortProv: "Sort: Province",
-    sortTeknik: "Sort: Technique",
-    maknaEyebrow: "PHILOSOPHY IN CLOTH",
-    maknaTitle: "Every stroke is a prayer.",
-    maknaDesc:
-      "Batik is not decoration. <b>Parang</b> for courage, <b>Kawung</b> for honesty, <b>Truntum</b> for love that grows again. Understanding meaning = honoring the maker.",
-    belaEyebrow: "DEFENDING THE NATION - STUDENT VERSION",
-    belaTitle: "Defend the nation through small daily batik actions.",
-    touristTitle: "For Tourists - Quick Guide",
-    touristDesc:
-      "Batik <b>Tulis</b> = hand-drawn (weeks, $), <b>Cap</b> = stamped (hours, $), <b>Kombinasi</b> = both. Real batik has pattern on <b>both sides</b>. Check tag: \u201cBatik Tulis Asli\u201d.",
-    footerDesc:
-      "Batik Negara - Indonesian batik database as a student action to defend the nation. Made by students, for Indonesia.",
-    footerJelajah: "Explore",
-    footerEdukasi: "Education",
-    footerBN: "BN",
-    countSuffix: " motifs",
-    empty: "No matching motifs. Try another keyword.",
-    modalFilosofi: "Philosophy",
-    modalSejarah: "History",
-    modalWarna: "Colors & Material",
-    modalPakai: "Usage",
-    modalEnTitle: "EN - For Tourists",
-    btnBagikan: "Share Motif",
-    btnTutup: "Close",
-    btnBrowse: "Browse Collection",
-  },
-};
-function applyLang() {
-  const d = I18N[lang];
-  document.documentElement.lang = lang;
-  const nav = document.querySelectorAll(".nav-links a");
-  if (nav[0]) nav[0].textContent = d.navKoleksi;
-  if (nav[1]) nav[1].textContent = d.navMakna;
-  if (nav[2]) nav[2].textContent = d.navBela;
-  const navBtn = document.querySelector(".nav-actions .btn-primary");
-  if (navBtn) navBtn.textContent = d.navJelajah;
-  const badge = document.querySelector(".hero-badge");
-  if (badge) badge.textContent = d.heroBadge;
-  const heroH1 = document.querySelector(".hero-card h1");
-  if (heroH1) heroH1.innerHTML = d.heroTitle;
-  const heroP = document.querySelector(".hero-card p");
-  if (heroP) heroP.innerHTML = d.heroDesc;
-  const hs = document.getElementById("heroSearch");
-  if (hs) hs.placeholder = d.heroSearch;
-  const hm = document.querySelector(".hero-meta");
-  if (hm) hm.innerHTML = d.heroMeta;
-  const hb = document.querySelectorAll(".hero-actions a");
-  if (hb[0]) hb[0].textContent = d.heroBtn1;
-  if (hb[1]) hb[1].textContent = d.heroBtn2;
-  const ey = document.querySelector("#koleksi .eyebrow");
-  if (ey) ey.textContent = d.koleksiEyebrow;
-  const kt = document.querySelector("#koleksi h2");
-  if (kt) kt.textContent = d.koleksiTitle;
-  const kd = document.querySelector("#koleksi .section-head p");
-  if (kd) kd.textContent = d.koleksiDesc;
-  const fp = document.getElementById("fProv");
-  if (fp && fp.options[0]) fp.options[0].textContent = d.filterAllProv;
-  const ft = document.getElementById("fTeknik");
-  if (ft && ft.options[0]) ft.options[0].textContent = d.filterAllTeknik;
-  const fs = document.getElementById("fSort");
-  if (fs) {
-    if (fs.options[0]) fs.options[0].textContent = d.sortNama;
-    if (fs.options[1]) fs.options[1].textContent = d.sortProv;
-    if (fs.options[2]) fs.options[2].textContent = d.sortTeknik;
+  en:{
+    navKoleksi:"Collection",navMakna:"Meaning",navBela:"Heritage",navJelajah:"Explore",
+    heroBadge:"UNESCO Heritage 2009 - Shared by 270 Million",
+    heroTitle:'Preserve<br><span class="serif">Batik,</span> Defend<br>the Nation.',
+    heroDesc:'Defending the nation is not always about weapons. Sometimes it is as simple as <strong>knowing, wearing, and preserving</strong> a 400-year-old textile - so visitors understand and locals remember.',
+    heroSearch:"Search motif, region, or meaning... e.g. Mega Mendung",
+    heroMeta:'<span><b>16</b> curated motifs</span><span class="dot">\u2022</span><span><b>11</b> provinces</span><span class="dot">\u2022</span><span><b>3</b> techniques: Tulis, Cap, Kombinasi</span>',
+    heroBtn1:"Explore Collection",heroBtn2:"Why is this patriotic?",
+    koleksiEyebrow:"DATABASE - CURATED FOR VISITORS & LOCALS",koleksiTitle:"Indonesian Batik Collection",koleksiDesc:"Tap any card to read its philosophy, technique, and palette. Fully bilingual - Indonesian & English.",
+    filterAllProv:"All Provinces",filterAllTeknik:"All Techniques",sortNama:"Sort: Name A-Z",sortProv:"Sort: Province",sortTeknik:"Sort: Technique",
+    filterPlaceholder:"Search: name, region, meaning...",
+    maknaEyebrow:"PHILOSOPHY IN CLOTH",maknaTitle:"Every stroke is a prayer.",maknaDesc:'Batik is not mere decoration. <b>Parang</b> means courage, <b>Kawung</b> honesty, <b>Truntum</b> love that blooms again. To understand the meaning is to honor its maker.',
+    belaEyebrow:"HERITAGE IN ACTION - STUDENT EDITION",belaTitle:"Small daily acts, big love for the nation - through batik.",
+    belaLead:"The brief says: be disciplined, responsible, care for nature, respect others, follow custom, contribute. BN turns it into 6 daily batik actions:",
+    stats1:"Oct 2",stats1s:"National Batik Day",stats2:"5,000+",stats2s:"recorded motifs",stats3:"34",stats3s:"provinces with signature batik",stats4:"#1",stats4s:"small act every day",
+    touristTitle:"For Visitors - Quick Guide",touristDesc:'Batik <b>Tulis</b> = hand-drawn (weeks, $$), <b>Cap</b> = stamped (hours, $), <b>Kombinasi</b> = both. Authentic batik shows the pattern on <b>both sides</b>. Look for the tag: \u201cBatik Tulis Asli\u201d.',
+    touristCare:"Care: hand wash cold, no bleach, dry in shade.",
+    footerDesc:"Batik Negara - an Indonesian batik database as a student act of love for the nation. Made by students, for Indonesia.",
+    footerMuted:"Not a shop. To buy, visit the artisans directly.",
+    footerJelajah:"Explore",footerEdukasi:"Learn",footerBN:"BN",
+    countSuffix:" motifs",empty:"No matches. Try another keyword.",
+    modalFilosofi:"Philosophy",modalSejarah:"History",modalWarna:"Colors & Material",modalPakai:"How to Wear",modalEnTitle:"EN - For Visitors",
+    btnBagikan:"Share",btnTutup:"Close",btnBrowse:"Browse Collection",btnCari:"Search",
+    values:[
+      {t:"Discipline",p:"Learn 1 motif per week. Memorize its origin & meaning. Keep a journal.",s:"Example: wear a different batik each Monday and tell its story."},
+      {t:"Responsibility",p:"Buy authentic batik, not printed imitations. Support tulis artisans.",s:"Impact: 1 tulis cloth = 14-30 days of livelihood for an artisan."},
+      {t:"Eco Care",p:"Choose natural dyes (indigo, tingi, jambal). Wash gently without harsh detergent.",s:"Natural indigo waste returns to earth, synthetic does not."},
+      {t:"Respect",p:"Greet artisans, ask before photographing, credit and tag. Do not haggle harshly.",s:"For visitors: \u201cmay I photo your canting?\u201d shows respect."},
+      {t:"Respect Custom",p:"Honor forbidden palace motifs. Do not wear Parang Rusak casually.",s:"Customary law is the unwritten constitution."},
+      {t:"Positive Impact",p:"Retell the story. Post 1 batik photo with correct info. Counter the hoax \u201cbatik is from another country\u201d.",s:"Correct information is a cultural fortress."}
+    ]
   }
-  const me = document.querySelector("#makna .eyebrow");
-  if (me) me.textContent = d.maknaEyebrow;
-  const mt = document.querySelector("#makna h2");
-  if (mt) mt.textContent = d.maknaTitle;
-  const md = document.querySelector("#makna .split p");
-  if (md) md.innerHTML = d.maknaDesc;
-  const be = document.querySelector("#bela .eyebrow");
-  if (be) be.textContent = d.belaEyebrow;
-  const bt = document.querySelector("#bela h2");
-  if (bt) bt.textContent = d.belaTitle;
-  const fd = document.querySelector(".footer-in div p");
-  if (fd) fd.textContent = d.footerDesc;
-  const fj = document.querySelectorAll(".footer-in h4");
-  if (fj[0]) fj[0].textContent = d.footerJelajah;
-  if (fj[1]) fj[1].textContent = d.footerEdukasi;
-  if (fj[2]) fj[2].textContent = d.footerBN;
-  const trH3 = document.querySelector(".tourist h3");
-  if (trH3) trH3.textContent = d.touristTitle;
-  const trP = document.querySelector(".tourist p");
-  if (trP) trP.innerHTML = d.touristDesc;
-  const trBtn = document.querySelector(".tourist-cta .btn-primary");
-  if (trBtn) trBtn.textContent = d.btnBrowse;
-  const trSpan = document.querySelector(".tourist-cta span");
-  if (trSpan)
+};
+function applyLang(){
+  const d=I18N[lang];
+  document.documentElement.lang=lang;
+  try{localStorage.setItem("bn-lang",lang)}catch(e){}
+  const nav=document.querySelectorAll(".nav-links a");
+  if(nav[0]) nav[0].textContent=d.navKoleksi;
+  if(nav[1]) nav[1].textContent=d.navMakna;
+  if(nav[2]) nav[2].textContent=d.navBela;
+  const navBtn=document.querySelector(".nav-actions .btn-primary");
+  if(navBtn) navBtn.textContent=d.navJelajah;
+  const badge=document.querySelector(".hero-badge");
+  if(badge) badge.textContent=d.heroBadge;
+  const heroH1=document.querySelector(".hero-card h1");
+  if(heroH1) heroH1.innerHTML=d.heroTitle;
+  const heroP=document.querySelector(".hero-card p");
+  if(heroP) heroP.innerHTML=d.heroDesc;
+  const hs=document.getElementById("heroSearch");
+  if(hs) hs.placeholder=d.heroSearch;
+  const qInput=document.getElementById("q");
+  if(qInput) qInput.placeholder=d.filterPlaceholder;
+  const hm=document.querySelector(".hero-meta");
+  if(hm) hm.innerHTML=d.heroMeta;
+  const hb=document.querySelectorAll(".hero-actions a");
+  if(hb[0]) hb[0].textContent=d.heroBtn1;
+  if(hb[1]) hb[1].textContent=d.heroBtn2;
+  const heroBtn=document.querySelector(".hero-search button");
+  if(heroBtn) heroBtn.textContent=d.btnCari;
+  const ey=document.querySelector("#koleksi .eyebrow");
+  if(ey) ey.textContent=d.koleksiEyebrow;
+  const kt=document.querySelector("#koleksi h2");
+  if(kt) kt.textContent=d.koleksiTitle;
+  const kd=document.querySelector("#koleksi .section-head p");
+  if(kd) kd.textContent=d.koleksiDesc;
+  const fp=document.getElementById("fProv");
+  if(fp && fp.options[0]) fp.options[0].textContent=d.filterAllProv;
+  const ft=document.getElementById("fTeknik");
+  if(ft && ft.options[0]) ft.options[0].textContent=d.filterAllTeknik;
+  const fs=document.getElementById("fSort");
+  if(fs){ if(fs.options[0]) fs.options[0].textContent=d.sortNama; if(fs.options[1]) fs.options[1].textContent=d.sortProv; if(fs.options[2]) fs.options[2].textContent=d.sortTeknik; }
+  const me=document.querySelector("#makna .eyebrow");
+  if(me) me.textContent=d.maknaEyebrow;
+  const mt=document.querySelector("#makna h2");
+  if(mt) mt.textContent=d.maknaTitle;
+  const md=document.querySelector("#makna .split p");
+  if(md) md.innerHTML=d.maknaDesc;
+  const be=document.querySelector("#bela .eyebrow");
+  if(be) be.textContent=d.belaEyebrow;
+  const bt=document.querySelector("#bela h2");
+  if(bt) bt.textContent=d.belaTitle;
+  const bl=document.querySelector("#bela .lead");
+  if(bl) bl.textContent=d.belaLead;
+  const stats=document.querySelectorAll(".stat");
+  if(stats[0]){const s=stats[0].querySelector("strong");const m=stats[0].querySelector("span");if(s)s.textContent=d.stats1;if(m)m.textContent=d.stats1s}
+  if(stats[1]){const s=stats[1].querySelector("strong");const m=stats[1].querySelector("span");if(s)s.textContent=d.stats2;if(m)m.textContent=d.stats2s}
+  if(stats[2]){const s=stats[2].querySelector("strong");const m=stats[2].querySelector("span");if(s)s.textContent=d.stats3;if(m)m.textContent=d.stats3s}
+  if(stats[3]){const s=stats[3].querySelector("strong");const m=stats[3].querySelector("span");if(s)s.textContent=d.stats4;if(m)m.textContent=d.stats4s}
+  const vals=document.querySelectorAll(".values article");
+  d.values.forEach((v,i)=>{
+    const a=vals[i];
+    if(!a) return;
+    const h=a.querySelector("h3");
+    const p=a.querySelector("p");
+    const s=a.querySelector("span");
+    if(h) h.textContent=v.t;
+    if(p) p.textContent=v.p;
+    if(s) s.textContent=v.s;
+  });
+  const fd=document.querySelector(".footer-in div p");
+  if(fd) fd.textContent=d.footerDesc;
+  const fm=document.querySelector(".footer-in div p.muted");
+  if(fm) fm.textContent=d.footerMuted;
+  const fj=document.querySelectorAll(".footer-in h4");
+  if(fj[0]) fj[0].textContent=d.footerJelajah;
+  if(fj[1]) fj[1].textContent=d.footerEdukasi;
+  if(fj[2]) fj[2].textContent=d.footerBN;
+  const trH3=document.querySelector(".tourist h3");
+  if(trH3) trH3.textContent=d.touristTitle;
+  const trP=document.querySelector(".tourist p");
+  if(trP) trP.innerHTML=d.touristDesc;
+  const trCare=document.querySelector(".tourist p:nth-of-type(2)");
+  if(trCare) trCare.textContent=d.touristCare;
+  const trBtn=document.querySelector(".tourist-cta .btn-primary");
+  if(trBtn) trBtn.textContent=d.btnBrowse;
+  const trSpan=document.querySelector(".tourist-cta span");
+  if(trSpan)
     trSpan.textContent =
       lang === "id"
-        ? "Semua kartu ada EN translation - tap “EN” di detail."
-        : "All cards have EN translation - tap “EN” in details.";
-  const mgH4 = document.querySelectorAll(".m-grid h4");
-  if (mgH4[0]) mgH4[0].textContent = d.modalFilosofi;
-  if (mgH4[1]) mgH4[1].textContent = d.modalSejarah;
-  if (mgH4[2]) mgH4[2].textContent = d.modalWarna;
-  if (mgH4[3]) mgH4[3].textContent = d.modalPakai;
-  const meH4 = document.querySelector(".m-en h4");
-  if (meH4) meH4.textContent = d.modalEnTitle;
-  const mb = document.querySelectorAll(".modal-actions button");
-  if (mb[0]) mb[0].textContent = d.btnBagikan;
-  if (mb[1]) mb[1].textContent = d.btnTutup;
-  const btn = document.getElementById("langToggle");
-  if (btn) btn.textContent = lang === "id" ? "ID / EN" : "EN / ID";
+        ? "Semua kartu ada EN translation - tap \u201cEN\u201d di detail."
+        : "All cards have EN translation - tap \u201cEN\u201d in details.";
+  const mgH4=document.querySelectorAll(".m-grid h4");
+  if(mgH4[0]) mgH4[0].textContent=d.modalFilosofi;
+  if(mgH4[1]) mgH4[1].textContent=d.modalSejarah;
+  if(mgH4[2]) mgH4[2].textContent=d.modalWarna;
+  if(mgH4[3]) mgH4[3].textContent=d.modalPakai;
+  const meH4=document.querySelector(".m-en h4");
+  if(meH4) meH4.textContent=d.modalEnTitle;
+  const mb=document.querySelectorAll(".modal-actions button");
+  if(mb[0]) mb[0].textContent=d.btnBagikan;
+  if(mb[1]) mb[1].textContent=d.btnTutup;
+  const sw=document.getElementById("langToggle");
+  if(sw){
+    sw.querySelectorAll("button").forEach(b=>{
+      const a=b.dataset.lang===lang;
+      b.classList.toggle("active",a);
+      b.setAttribute("aria-pressed",a?"true":"false");
+    });
+  }
   render();
 }
 $("#langToggle").addEventListener("click", () => {
