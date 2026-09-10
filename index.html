@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BN - Batik Negara | Database Batik Indonesia untuk Bela Negara</title>
+<meta name="description" content="Database batik Indonesia. Lestarikan warisan UNESCO lewat 16 motif dari 34 provinsi. Untuk turis & warga lokal. Aksi kecil bela negara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,1,700&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#"><span class="logo-mark">◈</span><span class="logo-type"><b>BN</b><em>Batik Negara</em></span></a>
+    <nav class="nav-links">
+      <a href="#koleksi">Koleksi</a>
+      <a href="#makna">Makna &amp; Filosofi</a>
+      <a href="#bela">Bela Negara</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn-ghost" id="langToggle">ID / EN</button>
+      <a href="#koleksi" class="btn-primary">Jelajahi Batik</a>
+    </div>
+    <button class="burger" id="burger" aria-label="menu">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#koleksi">Koleksi</a><a href="#makna">Makna</a><a href="#bela">Bela Negara</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="kain batik tulis detail"></div>
+  <div class="hero-card">
+    <div class="hero-badge">✦ Warisan UNESCO 2009 - Milik Bersama 270 Juta Warga</div>
+    <h1>Lestarikan<br><span class="serif">Batik,</span> Bela<br>Negara.</h1>
+    <p>Bela negara tak selalu angkat senjata. Kadang sesederhana <strong>mengenal, memakai, dan menjaga</strong> kain yang bercerita 400 tahun - agar turis mengerti, warga ingat.</p>
+    <div class="hero-search">
+      <input id="heroSearch" type="search" placeholder="Cari motif, daerah, atau makna…  cth: Mega Mendung">
+      <button class="btn-primary" onclick="document.getElementById('koleksi').scrollIntoView({behavior:'smooth'})">Cari</button>
+    </div>
+    <div class="hero-meta">
+      <span><b>16</b> motif terkurasi</span><span class="dot">•</span><span><b>11</b> provinsi</span><span class="dot">•</span><span><b>3</b> teknik: Tulis, Cap, Kombinasi</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#koleksi" class="btn-primary">Jelajahi Koleksi →</a>
+      <a href="#bela" class="btn-secondary">Kenapa ini bela negara?</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-in">
+    <div class="stat"><strong>2 Oktober</strong><span>Hari Batik Nasional</span></div>
+    <div class="stat"><strong>5.000+</strong><span>varian motif tercatat</span></div>
+    <div class="stat"><strong>34</strong><span>provinsi punya batik khas</span></div>
+    <div class="stat"><strong>#1</strong><span>aksi kecil tiap hari</span></div>
+  </div>
+</section>
+
+<section id="koleksi" class="section">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">DATABASE - DIKURASI UNTUK TURIS & WARGA LOKAL</div>
+      <h2>Koleksi Batik Indonesia</h2>
+      <p>Tap kartu untuk baca filosofi, teknik, dan warna. Semua konten dwibahasa - Indonesia & English.</p>
+    </div>
+    <div class="legend">
+      <span class="pill tulis">Tulis</span><span class="pill cap">Cap</span><span class="pill komb">Kombinasi</span>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filter-search">
+      <input id="q" type="search" placeholder="Cari : nama, daerah, makna…">
+    </div>
+    <select id="fProv"><option value="">Semua Provinsi</option></select>
+    <select id="fTeknik"><option value="">Semua Teknik</option><option>Tulis</option><option>Cap</option><option>Kombinasi</option></select>
+    <select id="fSort"><option value="nama">Urut: Nama A-Z</option><option value="prov">Urut: Provinsi</option><option value="teknik">Urut: Teknik</option></select>
+    <span id="count" class="count">16 motif</span>
+  </div>
+
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty hidden">Tidak ada motif cocok. Coba kata kunci lain.</div>
+</section>
+
+<section id="makna" class="section alt">
+  <div class="split">
+    <div>
+      <div class="eyebrow">FILOSOFI DALAM KAIN</div>
+      <h2>Setiap guratan ada doa.</h2>
+      <p>Batik bukan hiasan. <b>Parang</b> untuk keberanian, <b>Kawung</b> untuk kejujuran, <b>Truntum</b> untuk cinta yang tumbuh lagi. MEMAHAMI makna = menghargai pembuatnya.</p>
+      <ul class="check">
+        <li><b>Warna Sogan</b> - cokelat keraton, kesabaran & kebumian</li>
+        <li><b>Indigo</b> - biru nila, ketenangan & spiritual</li>
+        <li><b>Mori putih</b> - kesucian & awal baru</li>
+      </ul>
+      <p class="muted">Untuk turis: tiap motif punya “cerita 15 detik” di kartu - perfect untuk guide atau etalase toko.</p>
+    </div>
+    <div class="photo-stack">
+      <div class="photo ph1"><span>Parang Kusumo • Solo - motif larangan keraton, dulu hanya raja boleh pakai</span></div>
+      <div class="photo ph2"><span>Mega Mendung • Cirebon - 7 gradasi mendung, ajarkan sabar & menahan diri</span></div>
+      <div class="photo ph3"><span>Sekar Jagad • Yogyakarta - “peta dunia”, simbol keberagaman Indonesia</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="bela" class="section">
+  <div class="eyebrow">BELA NEGARA VERSI MAHASISWA</div>
+  <h2>Bela negara dari tindakan kecil - lewat batik.</h2>
+  <p class="lead">Tugas bilang: disiplin, tanggung jawab, jaga lingkungan, hargai sesama, taat aturan, kontribusi positif. BN terjemahkan jadi 6 aksi batik sehari-hari:</p>
+  <div class="values">
+    <article><h3>🎓 Disiplin</h3><p>Belajar 1 motif/minggu. Hafal asal & makna. Catat di jurnal.</p><span>Contoh: tiap Senin pakai batik berbeda + bisa ceritakan filosofinya.</span></article>
+    <article><h3>🤝 Tanggung Jawab</h3><p>Beli batik asli, bukan print tiruan pasar. Dukung pengrajin tulis.</p><span>Dampak: 1 kain tulis = 14-30 hari kerja pengrajin tetap hidup.</span></article>
+    <article><h3>🌿 Jaga Lingkungan</h3><p>Pilih pewarna alam (nila, tingi, jambal). Cuci batik tanpa deterjen keras.</p><span>Limbah nila bisa kembali ke tanah, sintetis tidak.</span></article>
+    <article><h3>🫶 Hargai Sesama</h3><p>Sapa pengrajin, foto izin, tag & kredit. Jangan tawar sadis.</p><span>Turis: tanya “boleh foto cantingnya?” itu hormat.</span></article>
+    <article><h3>📜 Taat Aturan</h3><p>Hormati motif larangan keraton. Jangan pakai Parang Rusak di acara main-main.</p><span>Aturan adat = undang-undang tak tertulis.</span></article>
+    <article><h3>✨ Kontribusi Positif</h3><p>Cerita ulang. Posting 1 foto batik + info benar. Lawan hoaks “batik dari negara lain”.</p><span>Informasi benar = benteng budaya.</span></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="tourist">
+    <div>
+      <h3>For Tourists - Quick Guide</h3>
+      <p>Batik <b>Tulis</b> = hand-drawn (weeks, $$), <b>Cap</b> = stamped (hours, $), <b>Kombinasi</b> = both. Real batik has pattern on <b>both sides</b>. Check tag: “Batik Tulis Asli”.</p>
+      <p>Care: hand wash cold, no bleach, dry shade.</p>
+    </div>
+    <div class="tourist-cta">
+      <a href="#koleksi" class="btn-primary">Browse Collection</a>
+      <span>Semua kartu ada EN translation - tap “EN” di detail.</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-in">
+    <div><div class="logo"><span class="logo-mark">◈</span><b>BN</b></div><p>Batik Negara - database batik Indonesia sebagai aksi bela negara. Dibuat mahasiswa, untuk Indonesia.</p><p class="muted">Bukan toko. Untuk beli, kunjungi pengrajin langsung.</p></div>
+    <div><h4>Jelajah</h4><a href="#koleksi">Koleksi</a><a href="#makna">Filosofi</a><a href="#bela">Bela Negara</a></div>
+    <div><h4>Edukasi</h4><a href="#">Bedanya Tulis vs Cap</a><a href="#">Warna Alam vs Sintetis</a><a href="#">Motif Larangan Keraton</a></div>
+    <div><h4>BN</h4><span>UNESCO 2009</span><span>Hari Batik 2 Okt</span></div>
+  </div>
+  <div class="footer-bar">© 2026 BN Batik Negara • Dibuat untuk tugas Bela Negara - “cinta Indonesia dari kain terkecil”</div>
+</footer>
+
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-bg" id="modalBg"></div>
+  <div class="modal-card">
+    <button class="modal-x" id="modalX" aria-label="close">✕</button>
+    <div class="modal-media" id="mMedia"></div>
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3 id="mName"></h3>
+        <span id="mProv" class="badge"></span>
+        <span id="mTeknik" class="pill"></span>
+      </div>
+      <p id="mMeaning" class="meaning"></p>
+      <div class="m-grid">
+        <div><h4>Filosofi</h4><p id="mFilosofi"></p></div>
+        <div><h4>Sejarah Singkat</h4><p id="mHistory"></p></div>
+        <div><h4>Warna & Bahan</h4><p id="mColors"></p></div>
+        <div><h4>Pemakaian</h4><p id="mUsage"></p></div>
+      </div>
+      <div class="m-en">
+        <h4>EN - For Tourists</h4><p id="mEn"></p>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-primary" onclick="shareCurrent()">Bagikan Motif</button>
+        <button class="btn-secondary" onclick="closeModal()">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyCQmru1zwS_6Wiz_WEzoVL4vc4VfBg7ESo",
+    authDomain: "bn-batik-negara.firebaseapp.com",
+    projectId: "bn-batik-negara",
+    storageBucket: "bn-batik-negara.firebasestorage.app",
+    messagingSenderId: "186437214452",
+    appId: "1:186437214452:web:4c812c693da3efb577fea1",
+    measurementId: "G-EP3Y19VPBM"
+  };
+  const app = initializeApp(firebaseConfig);
+  getAnalytics(app);
+</script>
+</body>
+</html>
